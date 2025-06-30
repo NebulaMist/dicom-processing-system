@@ -2,7 +2,13 @@
 
 ## 项目概述
 
-本项目是一个完整的DICOM（Digital Imaging and Communications in Medicine）医学影像数据处理系统，实现了数据字典解析、传输语法处理和数据元素解析功能。项目基于组合模式设计，支持多种DICOM传输语法格式的数据解析。
+本项目是一个完整的DICOM（Digital Imaging and Communications in Medicine）医学影像数据处理系统，实现了数据字典解析、传输语法处理和数据元素解析功能
+![{2A11CA2E-322E-4474-9243-8496F45C3883}](https://github.com/user-attachments/assets/7bb96496-5359-40f6-af57-90a98d0a155f)
+![{54AE6259-0846-4E6A-9C28-E9EEBD7446D3}](https://github.com/user-attachments/assets/266e5429-20e3-4616-9525-f48b644483ce)
+![{909B3D34-921E-4875-A49E-65D75E5C9DB6}](https://github.com/user-attachments/assets/74838960-3d9b-4cd3-be12-d0a1237b42f5)
+![{D1BBB427-4880-4EC0-B52B-6E827E49B189}](https://github.com/user-attachments/assets/953fdbae-e44c-43e1-a0d3-bfb71b4fef62)
+
+。项目基于组合模式设计，支持多种DICOM传输语法格式的数据解析。
 
 ## 项目结构
 
