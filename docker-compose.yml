@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  dicom-processor:
+    build: .
+    container_name: dicom-processing-system
+    volumes:
+      - ./test-data:/app/test-data
+      - ./output:/app/output
+    environment:
+      - JAVA_OPTS=-Xmx2g -Xms1g
+      - DICOM_LOG_LEVEL=INFO
+    networks:
+      - dicom-network
+    
+  dicom-test:
+    build: .
+    container_name: dicom-test-runner
+    command: ["mvn", "test"]
+    volumes:
+      - ./target:/app/target
+    networks:
+      - dicom-network
+    depends_on:
+      - dicom-processor
+
+networks:
+  dicom-network:
+    driver: bridge
+
+volumes:
+  test-data:
+  output:
